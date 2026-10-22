@@ -1,0 +1,143 @@
+
+header {
+background-color: #062548;
+
+}
+
+
+.logo{
+background-color: #062548;
+
+}
+
+
+.logo img{
+width: 7%;
+border-radius: 25px;
+}
+
+body{
+background-color: #ffffff;
+
+
+
+}
+
+.comofunciona{
+background-color: #F0F7FC;
+font-size: 20px;
+
+}
+
+.comofunciona button{
+background-color: #065CEB;
+color: #ffffff;
+border-radius: 10px;
+
+
+}
+
+#botao1 {
+background-color: #062548;
+color: #ffffff;
+border-radius: 10px;
+width: 120px;
+font-size: 30px;
+margin: 10px;
+margin-left: 1550px;
+
+}
+
+#botao2 {
+background-color: #065CEB;
+color: #ffffff;
+border-radius: 10px;
+width: 120px;
+font-size: 18px;
+margin: 2px;
+
+}
+
+.titulo{
+background-color: #062548;
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+}
+
+
+.titulo button{
+background-color: #065CEB;
+width: 110px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 18px;
+color: #ffffff;
+margin-left: 11px;
+border-radius: 20px;
+}
+
+.titulo p{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+
+
+}
+
+
+
+.solucoes{
+display: flex;
+flex-wrap: wrap; /*Permite quebrar linha*/
+gap: 20px; /*Espaçamento entre os cards*/
+justify-content: center;
+padding: 30px;
+
+}
+
+.produto{
+background-color:white;
+width: 270px; /*largura do card*/
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+}
+
+
+h3{
+font-size: 35px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+
+
+.nav a{
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+margin-left: 200px;
+
+
+
+}
+
+
+
+
+#partetrs{
+background-color: #062548;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+}
+
+.botao3{
+
+
+color: #ffffff;
+border-radius: 50px;
+width: 35px;
+font-size: 40px;
+margin: 7px;
+
+} 
