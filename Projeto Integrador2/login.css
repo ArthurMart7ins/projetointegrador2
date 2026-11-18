@@ -1,0 +1,81 @@
+/* Tela de Login Projeto Integrador */
+
+
+:root{--escuro:#071a33;--azul:#065CEB;--azul-claro:#2f8bff;--marinho:#0a2347}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Montserrat',Arial,sans-serif;color:var(--marinho);background:var(--escuro)}
+img{max-width:100%}
+:focus-visible{outline:3px solid #7fb2ff;outline-offset:2px}
+
+/* Fundo da página (troque por sua foto em imagens/hero.jpg) */
+.pagina{
+  position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;
+  padding:140px 7% 80px;
+  background:
+    linear-gradient(115deg,rgba(7,26,51,.97) 0%,rgba(7,36,76,.92) 38%,rgba(6,92,235,.55) 52%,rgba(7,26,51,.25) 53%,rgba(160,200,245,.2) 100%),
+    url('imagens/hero.jpg') center/cover,
+    linear-gradient(160deg,#071a33 0%,#0a3a7a 55%,#7fb1e6 100%);
+}
+.logo{position:absolute;top:40px;left:7%}
+.logo img{width:190px;border-radius:25px;display:block}
+
+/* Texto de boas-vindas */
+.eyebrow{margin:0 0 30px;color:#9cc5ff;font-size:14px;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+.eyebrow::after{content:'';display:block;width:78px;height:3px;background:var(--azul-claro);margin-top:14px}
+.boasvindas h1{margin:0;color:#fff;font-size:clamp(34px,5vw,60px);font-weight:700;line-height:1.1;max-width:520px}
+.boasvindas h1 span{color:var(--azul-claro);font-weight:800}
+.texto{color:#dbe8f8;font-size:19px;line-height:1.6;max-width:360px;margin:24px 0 0}
+
+/* Cartão */
+.cartao{background:#fff;border-radius:16px;padding:38px 40px 34px;max-width:430px;width:100%;justify-self:end;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.cadeado{display:grid;place-items:center;width:100px;height:100px;margin:0 auto 14px;border-radius:50%;background:#e4efff;color:#0a3d91}
+.cartao h2{margin:0;text-align:center;font-size:32px;font-weight:700}
+.sub{text-align:center;color:#3b4f6b;font-size:16px;line-height:1.6;margin:10px auto 26px;max-width:290px}
+
+label{display:block;font-weight:700;font-size:15px;margin:0 0 8px}
+.campo{display:flex;align-items:center;gap:12px;border:1px solid #c9d6e6;border-radius:10px;padding:0 16px;height:56px;color:#0a3d91;background:#fff}
+.campo:focus-within{border-color:var(--azul);box-shadow:0 0 0 3px rgba(6,92,235,.15)}
+.campo input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:16px;color:var(--marinho);background:transparent}
+.campo input::placeholder{color:#8a97aa}
+.olho{border:0;background:none;color:#0a3d91;cursor:pointer;display:grid;place-items:center;padding:4px}
+.erro{display:block;min-height:22px;margin:4px 0 8px;color:#b3261e;font-size:13px}
+
+.linha{display:flex;justify-content:space-between;align-items:center;margin:6px 0 22px;font-size:15px}
+.lembrar{display:flex;align-items:center;gap:12px;margin:0;font-weight:500;cursor:pointer}
+.lembrar input{width:20px;height:20px;accent-color:var(--azul);margin:0}
+.link{color:var(--azul);text-decoration:none;font-weight:500}
+.link:hover{text-decoration:underline}
+
+.entrar{display:flex;justify-content:center;align-items:center;gap:12px;width:100%;height:58px;border:0;border-radius:10px;background:var(--azul);color:#fff;font:600 18px 'Montserrat',sans-serif;cursor:pointer}
+.entrar:hover{filter:brightness(1.1)}
+
+.ou{display:flex;align-items:center;gap:16px;margin:22px 0;color:#3b4f6b;font-size:14px}
+.ou::before,.ou::after{content:'';flex:1;height:1px;background:#c9d6e6}
+
+.google{display:flex;justify-content:center;align-items:center;gap:12px;width:100%;height:56px;border:1px solid #c9d6e6;border-radius:10px;background:#fff;color:var(--marinho);font:600 16px 'Montserrat',sans-serif;cursor:pointer}
+.google:hover{background:#f4f8fd}
+.cadastro{text-align:center;margin:24px 0 0;font-size:15px}
+
+/* Rodapé */
+footer{background:var(--escuro);color:#fff;padding:30px 5% 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer img{width:56px;border-radius:20px}
+footer nav{display:flex;gap:30px;flex-wrap:wrap;margin:0 auto}
+footer nav a{color:#c9defa;font-size:13px;font-weight:500;text-decoration:none}
+footer nav a:hover{color:#fff}
+.redes{display:flex;gap:14px;padding-left:30px;border-left:1px solid rgba(255,255,255,.18)}
+.redes a{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;text-decoration:none;font-size:13px;font-weight:700}
+.copy{width:100%;text-align:center;margin:8px 0 0;font-size:12px;color:#a9bfdc}
+
+/* Responsivo */
+@media (max-width:900px){
+  .pagina{grid-template-columns:1fr;padding:130px 6% 60px;background-position:center}
+  .cartao{justify-self:center}
+  .logo{left:6%;top:30px}
+  .redes{border-left:0;padding-left:0}
+  footer{justify-content:center;text-align:center}
+  footer nav{gap:18px;justify-content:center}
+}
+@media (max-width:480px){
+  .cartao{padding:28px 20px}
+  .linha{flex-direction:column;align-items:flex-start;gap:12px}
+}
